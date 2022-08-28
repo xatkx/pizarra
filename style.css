@@ -1,0 +1,102 @@
+:root {
+    --naranja: rgb(255, 166, 0);
+    --negro: rgba(0,0,0,1);
+    --blanco: rgb(252, 252, 252);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0;}
+a {text-decoration: none; font-weight: bold; font-size: large;}
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(158, 158, 158);
+
+}
+
+nav {
+    background: var(--negro);
+    margin-bottom: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right {
+
+}
+
+.nav-right ul {
+    display: flex;
+    list-style: none;
+
+    color: var(--naranja);
+}
+
+.nav-right a, .nav-left a{
+    display: inline-block;
+    padding: 30px 20px;
+    color: var(--naranja);
+}
+
+.nav-left {}
+
+.nav-left ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.grid-center {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 20px;
+}
+.canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvas canvas{
+    background: var(--blanco);
+}
+.btn-form{
+    background: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-form input {
+    max-width: 15rem;
+    margin: 20px;
+} 
+
+input[type=range]{
+    max-width: none;
+}
+
+input[type=button]{
+    padding: 20px 10px;
+    background: var(--negro);
+    color: var(--naranja);
+    font-size: larger;
+    font-weight: bold;
+    border: none;
+}
+
+input[type=color]{
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    border: transparent;
+}
+
+.input-color {
+    
+} 
+
+
+
+

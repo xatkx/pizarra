@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizarra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-right">
+                <ul class="list-right">
+                    <li><a href="">items 1</a></li>
+                    <li><a href="">items 2</a></li>
+                    <li><a href="">items 3</a></li>
+                    <li><a href="">items 4</a></li>
+                </ul>
+            </div>
+            <div class="nav-left">
+                <ul class="list-left">
+                    <li><a><input type="search" placeholder="busqueda"></a></li>
+                    <li><a href=""> sign out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="grid-center">
+        <div class="canvas">
+            <canvas width="500" height="500" id="pizarra"></canvas>
+        </div>
+        <div class="btn-form">
+            <input type="range" value="5" step="5"  min="0" max="50" id="range">
+            <div class="input-color">
+                <input type="color" name="color" id="color">
+            </div>
+            <input type="button" id="clear" value="limpiar pizarra">
+        </div>
+    </main>
+    <script src="main.js"></script>
+    
+</body>
+</html>
